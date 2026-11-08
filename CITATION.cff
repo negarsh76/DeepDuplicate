@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "DeepDuplicate: cascaded exact, near and visual duplicate image detection"
+type: software
+authors:
+  - family-names: Shojaei
+    given-names: Negar
+version: 1.0.0
+date-released: "2026-11-08"
+license: MIT
+repository-code: "https://github.com/negarsh76/DeepDuplicate"
+keywords:
+  - "duplicate detection"
+  - "perceptual hashing"
+  - "CLIP"
+  - "DINOv2"
+  - "computer vision"
