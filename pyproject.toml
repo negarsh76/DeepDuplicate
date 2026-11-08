@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "deepduplicate"
+version = "1.0.0"
+description = "Find exact, near and visual duplicate images with a CLIP/DINOv2 → pHash → SSIM → RANSAC cascade"
+readme = "README.md"
+license = {text = "MIT"}
+authors = [{name = "Negar Shojaei"}]
+requires-python = ">=3.9"
+dependencies = ["numpy", "scipy", "pillow", "imagehash", "opencv-python-headless", "scikit-image", "tqdm"]
+
+[project.optional-dependencies]
+deep = ["torch", "torchvision", "timm", "open_clip_torch", "faiss-cpu"]
+heic = ["pillow-heif"]
+dev = ["pytest"]
+
+[project.scripts]
+deepdup = "deepduplicate.cli:main"
+deepdup-gui = "deepduplicate.gui:main"
+
+[tool.setuptools]
+packages = ["deepduplicate"]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]

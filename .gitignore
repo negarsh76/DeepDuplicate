@@ -1,0 +1,11 @@
+.ipynb_checkpoints/
+__pycache__/
+*.pyc
+.DS_Store
+.venv/
+*.egg-info/
+build/
+dist/
+benchmark/data/
+deepdup_report.*
+.deepdup_cache/

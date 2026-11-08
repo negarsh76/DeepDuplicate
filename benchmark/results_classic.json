@@ -1,0 +1,54 @@
+{
+  "pHash only (\u22646)": {
+    "precision": 1.0,
+    "recall": 0.3952380952380952,
+    "F1": 0.5665529010238908,
+    "seconds": 2.3873822689056396,
+    "recall_by_edit": {
+      "color-edited": 0.9428571428571428,
+      "cropped": 0.014285714285714285,
+      "perspective": 0.0,
+      "recompressed": 1.0,
+      "rotated+flipped": 1.0
+    }
+  },
+  "pHash only (\u226410)": {
+    "precision": 0.9494505494505494,
+    "recall": 0.4114285714285714,
+    "F1": 0.5740863787375415,
+    "seconds": 2.745311975479126,
+    "recall_by_edit": {
+      "color-edited": 0.9571428571428572,
+      "cropped": 0.05714285714285714,
+      "perspective": 0.0,
+      "recompressed": 1.0,
+      "rotated+flipped": 1.0
+    }
+  },
+  "Embedding only (classic, best cos=0.700)": {
+    "precision": 0.7969798657718121,
+    "recall": 0.4523809523809524,
+    "F1": 0.5771567436208992,
+    "seconds": 1.037914752960205,
+    "recall_by_edit": {
+      "color-edited": 0.9285714285714286,
+      "cropped": 0.6571428571428571,
+      "perspective": 0.38571428571428573,
+      "recompressed": 1.0,
+      "rotated+flipped": 0.11428571428571428
+    }
+  },
+  "Cascade (classic \u2192 pHash \u2192 SSIM \u2192 RANSAC)": {
+    "precision": 0.9890625,
+    "recall": 0.6028571428571429,
+    "F1": 0.7491124260355029,
+    "seconds": 41.89700102806091,
+    "recall_by_edit": {
+      "color-edited": 1.0,
+      "cropped": 0.6428571428571429,
+      "perspective": 0.44285714285714284,
+      "recompressed": 1.0,
+      "rotated+flipped": 1.0
+    }
+  }
+}
